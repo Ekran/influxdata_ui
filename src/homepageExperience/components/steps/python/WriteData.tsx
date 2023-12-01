@@ -50,7 +50,7 @@ export const WriteDataComponent = (props: OwnProps) => {
 
   const codeSnippet = `bucket="${bucket.name}"
 
-write_api = client.write_api(write_options=SYNCHRONOUS)
+write_api = write_client.write_api(write_options=SYNCHRONOUS)
    
 for value in range(5):
   point = (
